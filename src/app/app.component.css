@@ -1,8 +1,8 @@
 .is-ancestor {
   margin-top: 0.5%;
 }
-:host {
+/* :host {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-}
+} */
