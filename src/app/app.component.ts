@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- // title = 'Password Generator App';
+  // title = 'Password Generator App';
 
   length = 0;
   includeLetters = false;
@@ -57,4 +57,5 @@ export class AppComponent {
     }
     this.password = generatedPassword;
   }
+
 }
