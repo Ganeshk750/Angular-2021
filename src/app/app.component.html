@@ -1,94 +1,37 @@
 <div class="container">
-  <div class="notification is-info">
+  <!--   <div class="notification is-info">
     <h4 class="title">Angular Bootcamp</h4>
-  </div>
+  </div> -->
 
-<div class="tile is-ancestor">
-  <div class="tile is-parent">
-    <article class="tile is-child box notification is-success">
-      <p class="title">One</p>
-      <p class="subtitle">Subtitle</p>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box notification is-link">
-      <p class="title">Two</p>
-      <p class="subtitle">Subtitle</p>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box notification is-warning">
-      <p class="title">Three</p>
-      <p class="subtitle">Subtitle</p>
-    </article>
-  </div>
-  <div class="tile is-parent">
-    <article class="tile is-child box notification is-primary">
-      <p class="title">Four</p>
-      <p class="subtitle">Subtitle</p>
-    </article>
-  </div>
-</div>
-
-</div>
-
-<!-- <router-outlet></router-outlet> -->
-
-<!-- <div class="container">
-  <div class="columns is-centered">
-    <div class="box column is-one-third">
-      <h1 class="title has-text-centered">Password Generator</h1>
-
-      <div class="field">
-        <label>Length</label>
-        <input class="input" (input)="onChangeLength($event.target.value)" />
-      </div>
-
-      <div class="field">
-        <div class="control">
-          <label class="checkbox">
-            <input (change)="onChangeUseLetters()" type="checkbox" />
-            Use Letters
-          </label>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="control">
-          <label class="checkbox">
-            <input (change)="onChangeUseNumbers()" type="checkbox" />
-            Use Numbers
-          </label>
-        </div>
-      </div>
-
-      <div class="field">
-        <div class="control">
-          <label class="checkbox">
-            <input (change)="onChangeUseSymbols()" type="checkbox" />
-            Use Symbols
-          </label>
-        </div>
-      </div>
-
-      <button
-        [disabled]="
-          !(length && (includeLetters || includeSymbols || includeNumbers))
-        "
-        (click)="onButtonClick()"
-        class="button is-link is-fullwidth"
-      >
-        Generate!
-      </button>
-
-      <div class="box" *ngIf="password">
-        <label>Your Password</label>
-        <input class="input" [value]="password" />
-      </div>
-      <footer style="text-align: center">
-        <div class="copyright">Copyright &copy; 2021</div>
-      </footer>
+  <div class="tile is-ancestor">
+    <div class="tile is-parent">
+      <article class="tile is-child box notification is-success">
+        <p class="title">Password Generator</p>
+        <!-- <p class="subtitle">Subtitle</p> -->
+        <a routerLink="/pw" routerLinkActive="active" class="button is-white"
+          >View</a
+        >
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box notification is-link">
+        <p class="title">Two</p>
+        <p class="subtitle">Subtitle</p>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box notification is-warning">
+        <p class="title">Three</p>
+        <p class="subtitle">Subtitle</p>
+      </article>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child box notification is-primary">
+        <p class="title">Four</p>
+        <p class="subtitle">Subtitle</p>
+      </article>
     </div>
   </div>
 </div>
- -->
+<br />
+<router-outlet></router-outlet>
