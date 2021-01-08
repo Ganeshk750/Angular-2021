@@ -32,6 +32,7 @@ export class CardParentComponent implements OnInit {
       username: 'biking12222',
       content: 'I did some biking today'
     }
+    
   ];
 
   constructor() { }
