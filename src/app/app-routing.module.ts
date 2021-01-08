@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { PasswordGeneratorComponent } from './apps/password-generator/password-generator.component';
-import { CardComponent } from './apps/card/card.component';
+import { CardParentComponent } from './card-parent/card-parent.component';
 
 
 const routes: Routes = [
   { path: '', redirectTo: "/", pathMatch: "full" },
   { path: 'pw', component: PasswordGeneratorComponent },
-  { path: 'ci', component: CardComponent },
+  { path: 'ci', component: CardParentComponent },
 ]
 
 @NgModule({
