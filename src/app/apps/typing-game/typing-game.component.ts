@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { lorem } from 'faker';
 
 @Component({
   selector: 'app-typing-game',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TypingGameComponent implements OnInit {
 
+  randomText: string;
+
   constructor() { }
 
   ngOnInit() {
+    this.randomText = lorem.sentence();
   }
 
 }
