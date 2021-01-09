@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
 import { PasswordGeneratorComponent } from './apps/password-generator/password-generator.component';
-import { CardParentComponent } from './card-parent/card-parent.component';
+import { CardParentComponent } from './apps/card-parent/card-parent.component';
 
 
 const routes: Routes = [
