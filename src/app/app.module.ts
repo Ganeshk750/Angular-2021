@@ -5,14 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { PasswordGeneratorComponent } from './apps/password-generator/password-generator.component';
 import { CardComponent } from './apps/card/card.component';
 import { CardParentComponent } from './apps/card-parent/card-parent.component';
-
+import { TypingGameComponent } from './apps/typing-game/typing-game.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PasswordGeneratorComponent,
     CardComponent,
-    CardParentComponent
+    CardParentComponent,
+    TypingGameComponent
   ],
   imports: [
     BrowserModule,
