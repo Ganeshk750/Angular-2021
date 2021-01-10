@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { lorem } from 'faker';
 
 @Component({
@@ -6,14 +6,21 @@ import { lorem } from 'faker';
   templateUrl: './typing-game.component.html',
   styleUrls: ['./typing-game.component.css']
 })
-export class TypingGameComponent implements OnInit {
+export class TypingGameComponent {
 
-  randomText: string;
+  randomText = lorem.sentence();
+  enteredText = '';
 
-  constructor() { }
+  onInput(value: string) {
+    this.enteredText = value;
+  }
 
-  ngOnInit() {
-    this.randomText = lorem.sentence();
+  compare(randomLetter: string, enteredLetter: string) {
+    if (!enteredLetter) {
+      return 'pending';
+    }
+
+    return randomLetter === enteredLetter ? 'correct' : 'incorrect';
   }
 
 }
