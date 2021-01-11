@@ -1,44 +1,12 @@
-<div class="container">
-  <!--   <div class="notification is-info">
-    <h4 class="title">Angular Bootcamp</h4>
-  </div> -->
 
-  <div class="tile is-ancestor">
-    <div class="tile is-parent">
-      <article class="tile is-child box notification is-success">
-        <p class="title">Password Generator</p>
-        <!-- <p class="subtitle">Subtitle</p> -->
-        <a routerLink="/pw" routerLinkActive="active" class="button is-rounded is-white is-outlined"
-          >View</a
-        >
-      </article>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child box notification is-link">
-        <p class="title">Component Intraction</p>
-        <!-- <p class="subtitle">Subtitle</p> -->
-        <a routerLink="/ci" routerLinkActive="active" class="button is-rounded is-white is-outlined"
-          >View</a
-        >
-      </article>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child box notification is-warning">
-        <p class="title">Typing Game</p>
-       <!--  <p class="subtitle">Subtitle</p> -->
-       <a routerLink="/tp-game" routerLinkActive="active" class="button is-rounded is-white is-outlined"
-          >View</a
-        >
-      </article>
-    </div>
-    <div class="tile is-parent">
-      <article class="tile is-child box notification is-primary">
-        <p class="title">Four</p>
-        <p class="subtitle">Subtitle</p>
-      </article>
-    </div>
+<app-header></app-header>
+<div class="columns">
+  <div class="column is-one-quarter">
+    <app-side-nav></app-side-nav>
   </div>
+  <app-main></app-main>
 </div>
-<br />
 
-<router-outlet></router-outlet>
+<!-- Copy all code form main components -->
+
+<app-footer></app-footer>
