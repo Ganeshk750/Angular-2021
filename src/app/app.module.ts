@@ -6,6 +6,10 @@ import { PasswordGeneratorComponent } from './apps/password-generator/password-g
 import { CardComponent } from './apps/card/card.component';
 import { CardParentComponent } from './apps/card-parent/card-parent.component';
 import { TypingGameComponent } from './apps/typing-game/typing-game.component';
+import { HeaderComponent } from './common/header/header.component';
+import { FooterComponent } from './common/footer/footer.component';
+import { MainComponent } from './common/main/main.component';
+import { SideNavComponent } from './common/side-nav/side-nav.component';
 
 
 
@@ -15,7 +19,11 @@ import { TypingGameComponent } from './apps/typing-game/typing-game.component';
     PasswordGeneratorComponent,
     CardComponent,
     CardParentComponent,
-    TypingGameComponent
+    TypingGameComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
