@@ -10,6 +10,7 @@ import { HeaderComponent } from './common/header/header.component';
 import { FooterComponent } from './common/footer/footer.component';
 import { MainComponent } from './common/main/main.component';
 import { SideNavComponent } from './common/side-nav/side-nav.component';
+import { PaymentPipeComponent } from './apps/payment-pipe/payment-pipe.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SideNavComponent } from './common/side-nav/side-nav.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    SideNavComponent
+    SideNavComponent,
+    PaymentPipeComponent
   ],
   imports: [
     BrowserModule,
