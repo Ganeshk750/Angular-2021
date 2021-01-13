@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PaymentPipeComponent implements OnInit {
 
+  name: string;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onChangeName(value: string){
+    this.name = value;
   }
 
 }
