@@ -9,6 +9,8 @@ export class PaymentPipeComponent implements OnInit {
 
   name: string;
   date: string;
+  amount: number;
+
 
   constructor() { }
 
@@ -21,5 +23,9 @@ export class PaymentPipeComponent implements OnInit {
 
   onChangeDate(value: string){
     this.date = value;
+  }
+
+  onchangeAmount(value: number){
+    this.amount = value;
   }
 }

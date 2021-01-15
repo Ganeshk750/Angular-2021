@@ -18,18 +18,28 @@
         <div class="field">
           <label class="label">Amount</label>
           <div class="control">
-            <input class="input" (input)="onChangeName($event.target.value)" type="text" placeholder="Text input" />
+            <input class="input" (input)="onchangeAmount($event.target.value)" type="number" placeholder="Number" />
           </div>
         </div>
       </div>
     </div>
 
+    
    
     <div class="column is-6">
       <div class="card">
-          <label class="label">Receiver Name</label>
+          <label class="label">Receiver Name</label> 
           <p>{{ name| titlecase }}</p>
         </div>
+          <div class="card">
+          <label class="label">Received Date</label> 
+          <p>{{ date | date }}</p>
+        </div>
+          <div class="card">
+          <label class="label">Amount</label> 
+          <p>{{ amount | currency: "INR"  }}</p>
+        </div>
       </div>
+    
   </div>
 </div>
