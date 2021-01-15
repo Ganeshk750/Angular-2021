@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PaymentPipeComponent implements OnInit {
 
   name: string;
+  date: string;
 
   constructor() { }
 
@@ -18,4 +19,7 @@ export class PaymentPipeComponent implements OnInit {
     this.name = value;
   }
 
+  onChangeDate(value: string){
+    this.date = value;
+  }
 }
