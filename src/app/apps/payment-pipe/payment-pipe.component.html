@@ -3,7 +3,19 @@
     <div class="column is-6">
       <div class="card">
         <div class="field">
-          <label class="label">Name</label>
+          <label class="label">Reciver Name</label>
+          <div class="control">
+            <input class="input" (input)="onChangeName($event.target.value)" type="text" placeholder="Text input" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Recived Date</label>
+          <div class="control">
+            <input class="input" (input)="onChangeDate($event.target.value)" type="text" placeholder="Text input" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Amount</label>
           <div class="control">
             <input class="input" (input)="onChangeName($event.target.value)" type="text" placeholder="Text input" />
           </div>
@@ -14,8 +26,8 @@
    
     <div class="column is-6">
       <div class="card">
-          <label class="label">Name</label>
-          <p>{{ name| uppercase }}</p>
+          <label class="label">Receiver Name</label>
+          <p>{{ name| titlecase }}</p>
         </div>
       </div>
   </div>
