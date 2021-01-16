@@ -6,7 +6,7 @@
         <div class="field">
           <label class="label">Reciver Name</label>
           <div class="control">
-            <input class="input" (input)="onChangeName($event.target.value)" type="text" placeholder="Text input" />
+            <input class="input" (input)="onChangeName($event.target.value)" type="text" placeholder="Please Enter Name" />
           </div>
         </div>
         <div class="field">
@@ -19,6 +19,12 @@
           <label class="label">Amount</label>
           <div class="control">
             <input class="input" (input)="onchangeAmount($event.target.value)" type="number" placeholder="Number" />
+          </div>
+        </div>
+         <div class="field">
+          <label class="label">Miles</label>
+          <div class="control">
+            <input class="input" (input)="onchangeMiles($event.target.value)" type="number" placeholder="Number" />
           </div>
         </div>
       </div>
@@ -38,6 +44,10 @@
           <div class="card">
           <label class="label">Amount</label> 
           <p>{{ amount | currency: "INR"  }}</p>
+        </div>
+         <div class="card">
+          <label class="label">Kilometers</label> 
+          <p>{{ miles |   }}</p>
         </div>
       </div>
     

@@ -10,7 +10,8 @@ export class PaymentPipeComponent implements OnInit {
   name: string;
   date: string;
   amount: number;
-
+  //custom pipes
+  miles: number;
 
   constructor() { }
 
@@ -27,5 +28,9 @@ export class PaymentPipeComponent implements OnInit {
 
   onchangeAmount(value: number){
     this.amount = value;
+  }
+
+  onchangeMiles(value: string){
+    this.miles = parseFloat(value);
   }
 }
