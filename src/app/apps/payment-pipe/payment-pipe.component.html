@@ -24,7 +24,7 @@
          <div class="field">
           <label class="label">Miles</label>
           <div class="control">
-            <input class="input" (input)="onchangeMiles($event.target.value)" type="number" placeholder="Number" />
+            <input class="input" (input)="onchangeMiles($event.target.value)" type="number" placeholder="Please Enter Above 10 " />
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@
         </div>
          <div class="card">
           <label class="label">Kilometers</label> 
-          <p>{{ miles | convert }}</p>
+          <p *ngIf="miles > 10">{{ miles | convert : 'km' | number: '1.0-2'}}</p>
         </div>
       </div>
     

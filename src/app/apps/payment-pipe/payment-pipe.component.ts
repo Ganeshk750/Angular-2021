@@ -18,19 +18,19 @@ export class PaymentPipeComponent implements OnInit {
   ngOnInit() {
   }
 
-  onChangeName(value: string){
+  onChangeName(value: string) {
     this.name = value;
   }
 
-  onChangeDate(value: string){
+  onChangeDate(value: string) {
     this.date = value;
   }
 
-  onchangeAmount(value: number){
+  onchangeAmount(value: number) {
     this.amount = value;
   }
 
-  onchangeMiles(value: string){
+  onchangeMiles(value: string) {
     this.miles = parseFloat(value);
   }
 }
