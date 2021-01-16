@@ -11,6 +11,8 @@ import { FooterComponent } from './common/footer/footer.component';
 import { MainComponent } from './common/main/main.component';
 import { SideNavComponent } from './common/side-nav/side-nav.component';
 import { PaymentPipeComponent } from './apps/payment-pipe/payment-pipe.component';
+import { ConvertPipe } from './apps/payment-pipe/convert.pipe';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { PaymentPipeComponent } from './apps/payment-pipe/payment-pipe.component
     FooterComponent,
     MainComponent,
     SideNavComponent,
-    PaymentPipeComponent
+    PaymentPipeComponent,
+    ConvertPipe,
+   
   ],
   imports: [
     BrowserModule,
