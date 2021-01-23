@@ -5,6 +5,7 @@ import { PasswordGeneratorComponent } from './apps/password-generator/password-g
 import { CardParentComponent } from './apps/card-parent/card-parent.component';
 import { TypingGameComponent } from './apps/typing-game/typing-game.component';
 import { PaymentPipeComponent } from './apps/payment-pipe/payment-pipe.component';
+import { PageNotFoundComponent } from './apps/page-not-found/page-not-found.component';
 
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'ci', component: CardParentComponent },
   { path: 'tp-game', component: TypingGameComponent },
   { path: 'pipe', component: PaymentPipeComponent },
+  { path: '404', component: PageNotFoundComponent}
 ]
 
 @NgModule({
