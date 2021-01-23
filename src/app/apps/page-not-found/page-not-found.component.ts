@@ -14,19 +14,19 @@ export class PageNotFoundComponent implements OnInit {
 
 
   ngOnInit() {
-    setInterval(() => {
+   /*  setInterval(() => {
       this.redirectCount--;
       if (this.redirectCount <= 0) {
         this._router.navigate(['']);
       }
-    }, 1000);
+    }, 1000); */
   }
 
-  get redirectMessage(): string {
+ /*  get redirectMessage(): string {
     if (this.redirectCount <= 0) {
       return 'Redirecting....';
     }
     return `Redirecting you to home page in ${this.redirectCount}`;
-  }
+  } */
 
 }
