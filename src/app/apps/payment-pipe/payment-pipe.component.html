@@ -1,12 +1,12 @@
 <div class="container">
-  <article class="panel is-link">
-  <p class="panel-heading">
-    Payment Form
-  </p>
   <div class="columns">
-    <div class="column is-6">
-      <div class="card">
-        <div class="field">
+    <div class="column is-8">
+      <article class="message is-link">
+        <div class="message-header">
+          <p>Forms With Pipes</p>
+        </div>
+        <div class="message-body">
+           <div class="field">
           <label class="label">Reciver Name</label>
           <div class="control">
             <input class="input" (input)="onChangeName($event.target.value)" type="text" placeholder="Please Enter Name" />
@@ -30,30 +30,34 @@
             <input class="input" (input)="onchangeMiles($event.target.value)" type="number" placeholder="Please Enter Above 10 " />
           </div>
         </div>
-      </div>
+        </div>
+      </article>
     </div>
 
-    
-   
-    <div class="column is-6">
-      <div class="card">
+    <div class="column is-4">
+      <article class="message is-danger">
+        <div class="message-header">
+          <p>Data With Pipes</p>
+        </div>
+        <div class="message-body">
+          <div>
           <label class="label">Receiver Name</label> 
           <p>{{ name| titlecase }}</p>
         </div>
-          <div class="card">
+          <div>
           <label class="label">Received Date</label> 
           <p>{{ date | date: 'MMMM d, y' }}</p>
         </div>
-          <div class="card">
+          <div>
           <label class="label">Amount</label> 
           <p>{{ amount | currency: "INR"  }}</p>
         </div>
-         <div class="card">
+         <div>
           <label class="label">Kilometers</label> 
           <p *ngIf="miles > 10">{{ miles | convert : 'km' | number: '1.0-2'}}</p>
         </div>
-      </div>
-    
+        </div>
+      </article>
+    </div>
   </div>
-  </article>
 </div>
