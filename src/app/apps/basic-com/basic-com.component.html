@@ -11,11 +11,14 @@
         Receive News Letters: {{ receivenewsletter }}<br />
         Gender: {{ gender }}<br />
         Country: {{ country }}
-        <hr />
+        <br />
         <a [href]="address">Click Here</a>
+        <br /><br/>
+         <!-- <button class="button is-info">Login With Model</button> -->
       </div>
     </article>
   </div>
+
   <div class="column is-8">
     <article class="message">
       <div class="message-header">
@@ -50,9 +53,9 @@
        <label for="country">Country:
         <div class="select">
           <select [(ngModel)]="country">
-              <option>Select Country</option>
-              <option>India</option>
+              <option>Nepal</option>
               <option>Uk</option>
+              <option>India</option>
               <option>USA</option>
           </select>
         </div>
