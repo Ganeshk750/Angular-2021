@@ -1,6 +1,65 @@
 <div class="columns">
-  <div class="column is-6">
-    <p>Hello</p>
+  <div class="column is-4">
+    <article class="message">
+      <div class="message-header">
+        <p>Data Binding</p>
+      </div>
+      <div class="message-body">
+        FirstName: {{ firstName }}<br />
+        LastName: {{ lastName }}<br />
+        Age: {{ age }}<br />
+        Receive News Letters: {{ receivenewsletter }}<br />
+        Gender: {{ gender }}<br />
+        Country: {{ country }}
+        <hr />
+        <a [href]="address">Click Here</a>
+      </div>
+    </article>
   </div>
-  <p>World</p>
+  <div class="column is-8">
+    <article class="message">
+      <div class="message-header">
+        <p>Forms Example With Data Binding</p>
+      </div>
+      <div class="message-body">
+       First Name:<input class="input is-rounded" type="text"
+         placeholder="First Name" [(ngModel)]="firstName"><br>
+       Last Name:<input class="input is-rounded" type="text" 
+         placeholder="Last Name" [(ngModel)]="lastName"><br>
+       Age:<input class="input is-rounded" type="number" 
+         placeholder="Age" [(ngModel)]="age"><br>
+       <label class="checkbox">
+          <input type="checkbox" [(ngModel)]="receivenewsletter">
+             Receive News Letters
+            </label><br/> 
+        <div class="control">
+             Gender: &nbsp;
+             <label class="radio">
+               <input type="radio" [(ngModel)]="gender" value="Male">
+                  Male
+             </label>
+             <label class="radio">
+               <input type="radio" [(ngModel)]="gender" value="Female">
+                  Female
+             </label>
+              <label class="radio">
+               <input type="radio" [(ngModel)]="gender" value="Other">
+                  Other
+             </label>
+        </div>
+       <label for="country">Country:
+        <div class="select">
+          <select [(ngModel)]="country">
+              <option>Select Country</option>
+              <option>India</option>
+              <option>Uk</option>
+              <option>USA</option>
+          </select>
+        </div>
+      </label>
+        <br/><br/>
+        <button (click)="changeData()" class="button is-info">Change Data</button>
+      </div>
+    </article>
+  </div>
 </div>

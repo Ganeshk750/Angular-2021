@@ -14,6 +14,7 @@ import { PaymentPipeComponent } from './apps/payment-pipe/payment-pipe.component
 import { ConvertPipe } from './apps/payment-pipe/convert.pipe';
 import { PageNotFoundComponent } from './apps/page-not-found/page-not-found.component';
 import { BasicComComponent } from './apps/basic-com/basic-com.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { BasicComComponent } from './apps/basic-com/basic-com.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
