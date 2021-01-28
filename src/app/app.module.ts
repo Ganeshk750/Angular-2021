@@ -15,6 +15,7 @@ import { ConvertPipe } from './apps/payment-pipe/convert.pipe';
 import { PageNotFoundComponent } from './apps/page-not-found/page-not-found.component';
 import { BasicComComponent } from './apps/basic-com/basic-com.component';
 import { FormsModule } from '@angular/forms';
+import { ModelComponent } from './apps/model/model.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { FormsModule } from '@angular/forms';
     ConvertPipe,
     PageNotFoundComponent,
     BasicComComponent,
+    ModelComponent,
    
   ],
   imports: [
