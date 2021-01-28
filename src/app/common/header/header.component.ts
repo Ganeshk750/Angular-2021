@@ -8,9 +8,25 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit {
 
+  showModal: boolean = false;
+
+  selected: string = '';
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  selectItem() {
+    this.showModal = true;
+  }
+
+  selectedItem(selected) {
+    this.showModal = false; // hide modal
+    if (selected) {
+      this.selected = selected;
+      console.log(selected);
+    }
   }
 
 

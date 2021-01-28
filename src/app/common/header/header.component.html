@@ -43,7 +43,7 @@
         </div> 1 -->
       </div>
     </div>
-
+     
     <div class="navbar-end">
        <a href="#" class="navbar-item is-active">Home</a>
              <a href="#" class="navbar-item">Blog</a>
@@ -55,13 +55,16 @@
           <a class="button is-primary">
             <strong>Sign up</strong>
           </a>
-          <a class="button is-light">
+          <a class="button is-light" (click)="selectItem()">
             Log in
           </a>
         </div>
       </div>
     </div>
   </div>
+  <!-- <p *ngIf="selected">Selected: {{ selected }}</p>  -->
+<app-model [selected]="selected" *ngIf="showModal" (onClose)="selectedItem($event)"></app-model>
 </nav>
+
 
 
