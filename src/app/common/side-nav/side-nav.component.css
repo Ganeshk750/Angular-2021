@@ -1,6 +1,15 @@
 .panel {
   margin-top: 2.7%;
 }
+.card{
+  margin-top: 2.7%;
+}
+
+p{
+  text-align: center;
+  color: darkblue;
+  font-weight: bolder;
+}
 
   
 
