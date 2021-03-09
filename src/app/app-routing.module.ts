@@ -7,6 +7,7 @@ import { TypingGameComponent } from './apps/typing-game/typing-game.component';
 import { PaymentPipeComponent } from './apps/payment-pipe/payment-pipe.component';
 import { PageNotFoundComponent } from './apps/page-not-found/page-not-found.component';
 import { BasicComComponent } from './apps/basic-com/basic-com.component';
+import { SampleRedditComponent } from './apps/reddit/sample-reddit/sample-reddit.component';
 
 
 const routes: Routes = [
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'tp-game', component: TypingGameComponent },
   { path: 'pipe', component: PaymentPipeComponent },
   { path: 'basic', component: BasicComComponent },
-  { path: '404', component: PageNotFoundComponent }
+  { path: '404', component: PageNotFoundComponent },
+  { path: 'reddit', component: SampleRedditComponent },
 ]
 
 @NgModule({

@@ -15,6 +15,8 @@ import { ConvertPipe } from './apps/payment-pipe/convert.pipe';
 import { PageNotFoundComponent } from './apps/page-not-found/page-not-found.component';
 import { BasicComComponent } from './apps/basic-com/basic-com.component';
 import { FormsModule } from '@angular/forms';
+import { SampleRedditComponent } from './apps/reddit/sample-reddit/sample-reddit.component';
+import { ArticleComponent } from './apps/reddit/article/article.component';
 
 
 @NgModule({
@@ -32,6 +34,8 @@ import { FormsModule } from '@angular/forms';
     ConvertPipe,
     PageNotFoundComponent,
     BasicComComponent,
+    SampleRedditComponent,
+    ArticleComponent,
    
   ],
   imports: [
