@@ -1,4 +1,5 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit, Input } from '@angular/core';
+import { Article } from '../model/article.model';
 
 @Component({
   selector: 'app-article',
@@ -8,26 +9,25 @@ import { Component, HostBinding, OnInit } from '@angular/core';
 export class ArticleComponent implements OnInit {
 
   @HostBinding('attr.class') cssClass = 'row';
-  votes: number;
-  title: string;
-  link: string;
+  @Input() article: Article;
 
-  constructor() { 
-    this.title = 'Angular 7';
-    this.link = 'http://angular.io';
-    this.votes = 10;
+  constructor() {
+    this.article = new Article(
+      'Angular 7',
+      'http://angular.io',
+      10);
   }
 
   ngOnInit() {
   }
 
   voteUp(): boolean {
-   this.votes += 1;
-   return false;
+    this.article.voteUp();
+    return false;
   }
 
   voteDown(): boolean {
-    this.votes -= 1;
+    this.article.voteDown();
     return false;
   }
 

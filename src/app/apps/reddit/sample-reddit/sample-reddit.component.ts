@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Article } from '../model/article.model';
 
 @Component({
   selector: 'app-sample-reddit',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SampleRedditComponent implements OnInit {
 
-  constructor() { }
+  articles: Article[];
+
+  constructor() {
+    this.articles = [
+      new Article('Angular 2', 'http://angular.io', 3),
+      new Article('Fullstack', 'http://fullstack.io', 2),
+      new Article('Angular Homepage', 'http://angular.io', 1)
+    ]
+  }
 
   ngOnInit() {
   }
