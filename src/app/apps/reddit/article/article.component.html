@@ -1,0 +1,18 @@
+<div class="columns">
+  <div class="column is-one-quarter">
+    <div class="tile is-ancestor">
+      <div class="tile is-parent">
+        <article class="tile is-child box">
+          <p class="title has-text-centered">{{ article.votes }}</p>
+          <p class="subtitle has-text-centered">Points</p>
+        </article>
+      </div>
+    </div>
+  </div>
+    <div class="column is-8">
+      <a href="{{ article.link }}">{{ article.title }}</a>
+      <br><br>
+      <a href (click)="voteUp()"> <i class="fas fa fa-arrow-up"></i> &nbsp; upvote</a> &nbsp; 
+      <a href (click)="voteDown()"> <i class="fas fa fa-arrow-down"></i> &nbsp; downvote</a> 
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container ml-25">
+  <div class="columns">
+    <div class="column is-8">
+      <article class="message is-link">
+        <div class="message-header">
+          <p>Sample Reddit</p>
+        </div>
+        <div class="message-body">
+           <div class="field">
+          <label class="label">Title</label>
+          <div class="control">
+            <input class="input" type="text" name="title" #newTitle placeholder="Please Enter Title" />
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Link</label>
+          <div class="control">
+            <input class="input" type="text" name="link" #newLink placeholder="Please Enter Link" />
+          </div>
+        </div>
+         <button class="button is-success is-outlined is-left"
+         (click)="addArticle(newTitle, newLink)">Submit Link</button>
+        
+        </div>
+      </article>
+    </div>
+
+  </div>
+  <div>
+  <app-article *ngFor="let oneArticle of articles"[article]="oneArticle"></app-article>
+  </div>
+</div>
