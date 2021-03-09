@@ -33,13 +33,8 @@ import { ArticleComponent } from './apps/reddit/article/article.component';
     ConvertPipe,
     PageNotFoundComponent,
     BasicComComponent,
-<<<<<<< HEAD
-
-=======
     SampleRedditComponent,
     ArticleComponent,
-   
->>>>>>> sample_raddit
   ],
   imports: [
     BrowserModule,
