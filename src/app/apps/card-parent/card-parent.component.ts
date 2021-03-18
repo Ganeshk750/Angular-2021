@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardParentComponent implements OnInit {
 
-   counter: number = 0;
+  counter: number = 0;
   classToSet: string = 'positive';
 
   posts = [
@@ -16,21 +16,18 @@ export class CardParentComponent implements OnInit {
       imageUrl: 'assets/tree.jpeg',
       username: 'nature',
       content: 'I saw this neat tree today',
-      //counter: 5
     },
     {
       title: 'Snowy Mountain',
       imageUrl: 'assets/mountain.jpeg',
       username: 'mountainlover',
       content: 'Here is a picture of a snowy mountain',
-      //counter: 6
     },
     {
       title: 'Mountain Biking',
       imageUrl: 'assets/biking.jpeg',
       username: 'biking12222',
       content: 'I did some biking today',
-      //counter: 8
     },
     {
       title: 'Mountain Biking',
@@ -48,7 +45,7 @@ export class CardParentComponent implements OnInit {
   }
 
   onCounterChange(buttonType: string) {
-     buttonType === 'INC' ? this.counter++ : this.counter--;
+    buttonType === 'INC' ? this.counter++ : this.counter--;
     this.classToSet = this.counter >= 0 ? 'positive' : 'negative';
   }
 

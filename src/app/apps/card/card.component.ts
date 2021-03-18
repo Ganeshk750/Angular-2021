@@ -12,7 +12,7 @@ export class CardComponent implements OnInit {
   @Input() imageUrl = '';
   @Input() content = '';
   @Input() username = '';
- // @Input() counter = '';
+ 
 
   @Output() counterChange: EventEmitter<String> = new EventEmitter<String>();
 
