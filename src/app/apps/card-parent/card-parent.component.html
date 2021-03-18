@@ -1,3 +1,13 @@
+<div class="columns ">
+  <div class="column">
+    <article class="tile is-child box">
+      <p class="title">@Output</p>
+      <p class="subtitle">Current counter: <span [class]="classToSet">{{counter}}</span></p>
+    </article>
+  </div>
+</div>
+
+<!-- Child -->
 <div class="container">
   <app-card
     *ngFor="let post of posts"
@@ -8,7 +18,6 @@
     (counterChange)="onCounterChange($event)"
   >
   </app-card>
-  <p>Current counter: <span [class]="classToSet">{{counter}}</span></p>
 </div>
  
 <router-outlet></router-outlet>
