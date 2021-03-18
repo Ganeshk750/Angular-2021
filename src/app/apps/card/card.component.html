@@ -13,11 +13,9 @@
       <div class="content">
         {{ content }}
       </div>
-         <h3>Current Value of the Counter is 
-            <span [class]="classToSet">{{counter}}</span>
-          </h3>
-        <button class="button is-small is-dark">Increment</button> <br>
-        <button class="button is-small is-info mt-2">Decrement</button>
+       <!-- <p> Counter: @{{ counter }}</p> -->
     </div>
+    <button class="button is-small is-dark" (click)="handleButton('INC')">Increment</button> <br>
+    <button class="button is-small is-info mt-2" (click)="handleButton('DEC')">Decrement</button>
   </div>
 </div>
