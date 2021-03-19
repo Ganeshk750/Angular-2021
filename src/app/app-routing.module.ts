@@ -22,7 +22,7 @@ const routes: Routes = [
   { path: '404', component: PageNotFoundComponent },
   { path: 'reddit', component: SampleRedditComponent },
   { path: 'chart', loadChildren: () => import('./chart/chart.module').then(a => a.ChartModule) },
-  { path: '**', component: PageNotFoundComponent }
+  
 ]
 
 @NgModule({

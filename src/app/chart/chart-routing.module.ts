@@ -7,6 +7,7 @@ import { RadarGraphComponent } from './components/radar-graph/radar-graph.compon
 import { BubbleGraphComponent } from './components/bubble-graph/bubble-graph.component';
 import { DoughnutGraphComponent } from './components/doughnut-graph/doughnut-graph.component';
 
+
 const routes: Routes = [
   { 
     path: '',

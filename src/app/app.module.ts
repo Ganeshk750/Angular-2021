@@ -17,7 +17,7 @@ import { BasicComComponent } from './apps/basic-com/basic-com.component';
 import { FormsModule } from '@angular/forms';
 import { SampleRedditComponent } from './apps/reddit/sample-reddit/sample-reddit.component';
 import { ArticleComponent } from './apps/reddit/article/article.component';
-import { ChartModule } from './chart/chart.module';
+//import { ChartModule } from './chart/chart.module';
 
 @NgModule({
   declarations: [
@@ -41,7 +41,7 @@ import { ChartModule } from './chart/chart.module';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    ChartModule
+   // ChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ChartsModule } from 'ng2-charts';
+//import { ChartsModule } from 'ng2-charts';
 import { ChartRoutingModule } from './chart-routing.module';
 import { LineGraphComponent } from './components/line-graph/line-graph.component';
 import { BarGraphComponent } from './components/bar-graph/bar-graph.component';
@@ -9,11 +9,12 @@ import { BubbleGraphComponent } from './components/bubble-graph/bubble-graph.com
 import { RadarGraphComponent } from './components/radar-graph/radar-graph.component';
 import { DoughnutGraphComponent } from './components/doughnut-graph/doughnut-graph.component';
 
+
 @NgModule({
   imports: [
     CommonModule,
     ChartRoutingModule,
-    ChartsModule
+  //  ChartsModule
   ],
   declarations: [
     LineGraphComponent, 
