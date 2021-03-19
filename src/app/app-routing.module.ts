@@ -10,6 +10,8 @@ import { BasicComComponent } from './apps/basic-com/basic-com.component';
 import { SampleRedditComponent } from './apps/reddit/sample-reddit/sample-reddit.component';
 
 
+
+const newLocal = './chart/chart.module';
 const routes: Routes = [
   { path: '', redirectTo: "/", pathMatch: "full" },
   { path: 'pw', component: PasswordGeneratorComponent },
@@ -19,6 +21,8 @@ const routes: Routes = [
   { path: 'basic', component: BasicComComponent },
   { path: '404', component: PageNotFoundComponent },
   { path: 'reddit', component: SampleRedditComponent },
+  { path: 'chart', loadChildren: () => import('./chart/chart.module').then(a => a.ChartModule) },
+  { path: '**', component: PageNotFoundComponent }
 ]
 
 @NgModule({
