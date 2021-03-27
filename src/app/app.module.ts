@@ -17,6 +17,7 @@ import { BasicComComponent } from './apps/basic-com/basic-com.component';
 import { FormsModule } from '@angular/forms';
 import { SampleRedditComponent } from './apps/reddit/sample-reddit/sample-reddit.component';
 import { ArticleComponent } from './apps/reddit/article/article.component';
+import { CaptchaComponent } from './apps/captcha/captcha.component';
 //import { ChartModule } from './chart/chart.module';
 
 @NgModule({
@@ -36,6 +37,7 @@ import { ArticleComponent } from './apps/reddit/article/article.component';
     BasicComComponent,
     SampleRedditComponent,
     ArticleComponent,
+    CaptchaComponent,
   ],
   imports: [
     BrowserModule,
