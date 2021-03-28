@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Validators } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-captcha',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CaptchaComponent implements OnInit {
 
-  constructor() { }
+  protected aFormGroup: FormGroup;
+
+  constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit() {
+    this.aFormGroup = this.formBuilder.group({
+      recaptcha: ['', Validators.required]
+    });
   }
 
 }
