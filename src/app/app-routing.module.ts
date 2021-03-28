@@ -8,6 +8,7 @@ import { PaymentPipeComponent } from './apps/payment-pipe/payment-pipe.component
 import { PageNotFoundComponent } from './apps/page-not-found/page-not-found.component';
 import { BasicComComponent } from './apps/basic-com/basic-com.component';
 import { SampleRedditComponent } from './apps/reddit/sample-reddit/sample-reddit.component';
+import { CaptchaComponent } from './apps/captcha/captcha.component';
 
 
 
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: '404', component: PageNotFoundComponent },
   { path: 'reddit', component: SampleRedditComponent },
   { path: 'chart', loadChildren: () => import('./chart/chart.module').then(a => a.ChartModule) },
+  { path: 'captcha' , component: CaptchaComponent }
   
 ]
 
