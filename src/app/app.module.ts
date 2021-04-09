@@ -20,6 +20,10 @@ import { FormsModule } from '@angular/forms';
 import { SampleRedditComponent } from './apps/reddit/sample-reddit/sample-reddit.component';
 import { ArticleComponent } from './apps/reddit/article/article.component';
 import { CaptchaComponent } from './apps/captcha/captcha.component';
+import { InstituteComponent } from './institute/institute.component';
+import { StudentComponent } from './student/student.component';
+import { CompanyComponent } from './company/company.component';
+import { EmployeeComponent } from './employee/employee.component';
 //import { ChartModule } from './chart/chart.module';
 
 @NgModule({
@@ -40,6 +44,10 @@ import { CaptchaComponent } from './apps/captcha/captcha.component';
     SampleRedditComponent,
     ArticleComponent,
     CaptchaComponent,
+    InstituteComponent,
+    StudentComponent,
+    CompanyComponent,
+    EmployeeComponent,
   ],
   imports: [
     BrowserModule,
