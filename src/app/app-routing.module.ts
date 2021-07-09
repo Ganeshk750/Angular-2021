@@ -13,6 +13,7 @@ import { CaptchaComponent } from './apps/captcha/captcha.component';
 
 
 const newLocal = './chart/chart.module';
+
 const routes: Routes = [
   { path: '', redirectTo: "/", pathMatch: "full" },
   { path: 'pw', component: PasswordGeneratorComponent },
