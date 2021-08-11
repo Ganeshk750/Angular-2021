@@ -8,19 +8,18 @@ import { retry, catchError } from 'rxjs/operators';
 })
 export class ApiService {
 
-  API_URL = 'https://api.github.com/search/user?=';
+  apiURL = 'https://api.github.com/search/users?q=';
 
-  constructor(private _http: HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-
-  getUsersByLocation(country: string): Observable<any> {
-    return this._http.get<any>(this.API_URL + 'location:' + country)
+  getUsersByLocation(country): Observable<any> {
+    return this.http.get<any>(this.apiURL + 'location:' + country)
       .pipe(
         retry(1),
         catchError((error: HttpErrorResponse) => {
           return throwError(error);
         })
-      )
+      );
   }
 
 }

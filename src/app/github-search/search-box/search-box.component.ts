@@ -11,14 +11,13 @@ import { SharedService } from '../services/shared.service';
 })
 export class SearchBoxComponent implements OnInit, AfterViewInit {
 
-  @ViewChild('textField') txtField: ElementRef;
+  @ViewChild('txtField') txtField: ElementRef;
 
-  searchSubcription: Subscription
+  searchSubcription: Subscription;
 
-  constructor(private _apiService: ApiService, private _sharedService: SharedService) { }
+  constructor(private apiService: ApiService, private sharedService: SharedService) { }
 
-
-  ngOnInit() {
+  ngOnInit(): void {
   }
 
   ngAfterViewInit(): void {
@@ -28,15 +27,15 @@ export class SearchBoxComponent implements OnInit, AfterViewInit {
   getSearchValue(): void {
     this.searchSubcription = fromEvent<any>(this.txtField.nativeElement, 'keyup')
       .pipe(
-        // Time for Key events
+        // Time in milliseconds between key events
         debounceTime(1000),
         map(event => event.target.value),
         distinctUntilChanged(),
-        switchMap(val => this._apiService.getUsersByLocation(val))
+        switchMap(val => this.apiService.getUsersByLocation(val))
       )
       .subscribe(data => {
-        this._sharedService.setUserData(data.items);
-      })
+        this.sharedService.setUserData(data.items);
+      });
   }
 
 }

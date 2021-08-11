@@ -8,11 +8,12 @@ import { SharedService } from '../services/shared.service';
 })
 export class SearchBoxResultComponent implements OnInit {
 
-  userList = [];
+  usersList = [];
 
-  constructor(private _shardService: SharedService) { 
+  constructor(private _shardService: SharedService) {
     this._shardService.getUserData().subscribe(data => {
-      this.userList = data;
+      this.usersList = data;
+      console.log('usersList => ', this.usersList);
     })
 
   }
