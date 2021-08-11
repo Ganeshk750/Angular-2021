@@ -30,6 +30,7 @@ import { SearchBoxResultComponent } from './github-search/search-box-result/sear
 //import { ChartModule } from './chart/chart.module';
 import { ApiService } from './github-search/services/api.service';
 import { SharedService } from './github-search/services/shared.service';
+import { GithubComponent } from './github-search/github/github.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { SharedService } from './github-search/services/shared.service';
     EmployeeComponent,
     SearchBoxComponent,
     SearchBoxResultComponent,
+    GithubComponent,
   ],
   imports: [
     BrowserModule,

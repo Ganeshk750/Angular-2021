@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from '../services/shared.service';
 
 @Component({
   selector: 'app-search-box-result',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBoxResultComponent implements OnInit {
 
-  constructor() { }
+  userList = [];
 
-  ngOnInit() {
+  constructor(private _shardService: SharedService) { 
+    this._shardService.getUserData().subscribe(data => {
+      this.userList = data;
+    })
+
+  }
+
+  ngOnInit(): void {
   }
 
 }
