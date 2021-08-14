@@ -13,7 +13,7 @@ export class GithubComponent implements OnInit {
   constructor(private _shardService: SharedService) {
     this._shardService.getUserData().subscribe(data => {
       this.usersList = data;
-      console.log('usersList => ', this.usersList);
+      // console.log('usersList => ', this.usersList);
     })
   }
 
