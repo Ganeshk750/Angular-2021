@@ -3,6 +3,7 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { NgxCaptchaModule } from 'ngx-captcha';
 import { PasswordGeneratorComponent } from './apps/password-generator/password-generator.component';
 import { CardComponent } from './apps/card/card.component';
@@ -24,7 +25,12 @@ import { InstituteComponent } from './institute/institute.component';
 import { StudentComponent } from './student/student.component';
 import { CompanyComponent } from './company/company.component';
 import { EmployeeComponent } from './employee/employee.component';
+import { SearchBoxComponent } from './github-search/search-box/search-box.component';
+import { SearchBoxResultComponent } from './github-search/search-box-result/search-box-result.component';
 //import { ChartModule } from './chart/chart.module';
+import { ApiService } from './github-search/services/api.service';
+import { SharedService } from './github-search/services/shared.service';
+import { GithubComponent } from './github-search/github/github.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +54,9 @@ import { EmployeeComponent } from './employee/employee.component';
     StudentComponent,
     CompanyComponent,
     EmployeeComponent,
+    SearchBoxComponent,
+    SearchBoxResultComponent,
+    GithubComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,9 +64,10 @@ import { EmployeeComponent } from './employee/employee.component';
     ReactiveFormsModule,
     AppRoutingModule,
     // ChartModule
-    NgxCaptchaModule
+    NgxCaptchaModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ApiService, SharedService],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

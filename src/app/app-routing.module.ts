@@ -9,13 +9,13 @@ import { PageNotFoundComponent } from './apps/page-not-found/page-not-found.comp
 import { BasicComComponent } from './apps/basic-com/basic-com.component';
 import { SampleRedditComponent } from './apps/reddit/sample-reddit/sample-reddit.component';
 import { CaptchaComponent } from './apps/captcha/captcha.component';
+import { GithubComponent } from './github-search/github/github.component';
 
 
 
 const newLocal = './chart/chart.module';
 
 const routes: Routes = [
-  { path: '', redirectTo: "/", pathMatch: "full" },
   { path: 'pw', component: PasswordGeneratorComponent },
   { path: 'ci', component: CardParentComponent },
   { path: 'tp-game', component: TypingGameComponent },
@@ -24,8 +24,10 @@ const routes: Routes = [
   { path: '404', component: PageNotFoundComponent },
   { path: 'reddit', component: SampleRedditComponent },
   { path: 'chart', loadChildren: () => import('./chart/chart.module').then(a => a.ChartModule) },
-  { path: 'captcha' , component: CaptchaComponent }
-  
+  { path: 'captcha', component: CaptchaComponent },
+  { path: 'github', component: GithubComponent },
+  { path: '', redirectTo: '/', pathMatch: 'full' }
+
 ]
 
 @NgModule({
