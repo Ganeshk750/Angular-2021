@@ -1,2 +1,10 @@
 <app-search-box></app-search-box>
-<app-search-box-result></app-search-box-result>
+
+<div class="container">
+<app-search-box-result *ngFor="let user of usersList"
+ [avatar_url]="user.avatar_url"
+ [login]="user.login"
+ [id]="user.id"
+>    
+</app-search-box-result>
+</div>
